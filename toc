@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Nodejs" audience="runtime"}
+{: .toc subcollection="Nodejs" audience="runtime" href="/docs/runtimes/nodejs/getting-started.html"}
 SDK for Node.js
 
     {: .navgroup id="learn"}
@@ -12,6 +12,7 @@ SDK for Node.js
     {: .navgroup id="howto"}
     startup.md
     runningLocally.md
+    enforceHTTPS.md
 
     {: .topicgroup}
     Work offline or with a proxy

@@ -20,6 +20,12 @@ The sdk-for-nodejs buildpack provides a complete runtime environment for Node.js
 
 The sdk-for-nodejs buildpack is used when the application contains a **package.json** file in the root directory.
 
+The application must listen on the port that is assigned to it through the PORT environment variable.
+```
+var port = (process.env.PORT || 3000);
+```
+{: codeblock}
+
 ## Starter application
 {: #starter_application}
 

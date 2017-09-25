@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017
-lastupdated: "2017-05-30"
+lastupdated: "2017-09-22"
 
 ---
 
@@ -14,13 +14,14 @@ lastupdated: "2017-05-30"
 # Run the Node.js application locally
 {: #hints}
 
-Use this information to facilitate running your Node.js application both locally and on {{site.data.keyword.Bluemix}}.
+Set a port number to run your Node.js application locally without causing conflicts when you run it on {{site.data.keyword.Bluemix}}.
 {: shortdesc}
 
-The following example shows part of the source for an **js** file:
+When the application is running on Bluemix, the PORT environment variable is allocated by Cloud Foundry. However, when the application is running locally, PORT is not defined, so you can define the port for your application. To avoid conflicts, define the port that your app listens to locally something different than the port used by Bluemix.
+
+In the following example for a **js** file, **3000** is used as the port number. By using **3000**, you can run the application locally for testing purposes and on Bluemix without making changes.
+
 ```
 var port = (process.env.PORT || 3000);
 ```
 {: codeblock}
-
-With this code, when the application is running on Bluemix, the PORT environment variable contains the port value that is internal to Bluemix, and on which the app listens for incoming connections. When the application is running locally, PORT is not defined so **3000** is used as the port number. Written this way, you can run the application locally for testing purposes and on Bluemix without making further changes.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-06"
+lastupdated: "2017-09-22"
 
 ---
 
@@ -105,7 +105,7 @@ cf api <API-endpoint>
    | US South       |https://api.ng.bluemix.net     |
    | United Kingdom | https://api.eu-gb.bluemix.net  |
    | Sydney         | https://api.au-syd.bluemix.net |
-   | Frankfurt     | https://api.eu-de.bluemix.net | 
+   | Frankfurt     | https://api.eu-de.bluemix.net |
 
 Log in to your {{site.data.keyword.Bluemix_notm}} account.
 
@@ -176,6 +176,8 @@ npm start
   {: pre}
 
   View your local app at http://localhost:3000. Any names you enter into the app will now get added to the database.
+
+** Avoid trouble**: Bluemix defines the PORT environment variable when your app runs on the cloud. When you run your app locally, the PORT variable is not defined, so 3000 is used as the port number. See [Run your app locally](runningLocally.html#hints) for more information.
 
   Your local app and the {{site.data.keyword.Bluemix_notm}} app are sharing the database. Names you add from either app will appear in both when you refresh the browsers.
 

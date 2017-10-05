@@ -35,7 +35,7 @@ You'll need the following accounts and tools:
 ## Step 1: Clone the sample app
 {: #clone}
 
-First, clone the Node.js *hello world* sample app GitHub repo.
+First, clone the Node.js *hello varun bhatnagar* sample app GitHub repo.
   ```
 git clone https://github.com/IBM-Bluemix/get-started-node
   ```
